@@ -1,30 +1,20 @@
 .cabecalho {
-  background-color: var(--background);
+  background-color: var(--cor-primaria);
   width: 100%;
   height: 80px;
 }
 
 .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-}
-
-.container__icones {
-  display: flex;
-  justify-content: flex-end;
-  gap: 16px;
-  width: 70%;
-}
-
-.container__imagem {
-  width: 32px;
 }
 
 .container__pesquisar {
   display: flex;
   justify-content: flex-start;
   padding: 16px;
-  width: 30%;
+  width: 20%;
 }
 
 .pesquisar-item {
@@ -32,8 +22,9 @@
   border: 1px solid var(--cor-primaria);
   color: var(--cor-primaria);
   border-radius: 24px;
-  padding: 1em;
+  padding: 12px;
   width: 80%;
+  font-size: 16px;
 }
 
 .pesquisar-item::placeholder {
@@ -42,9 +33,61 @@
   font-weight: 400;
   text-align: center;
   color: var(--cor-primaria);
-  background: url(../assets/icones/Lupa.png) no-repeat;
-  background-position: 1em;
+  background: url(../assets/icones/Lupa.svg) no-repeat;
+  background-position: 8px;
+  background-size: 16px;
 }
 .container__imagem__lupa {
   width: 8px;
 }
+
+.container__logo {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.logo-jmr {
+  width: 120px;
+}
+
+.container__icones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  padding-right: 32px;
+  width: 20%;
+}
+
+.container__imagem {
+  width: 32px;
+}
+
+.opcoes {
+  background-color: var(--cor-primaria);
+  align-items: center;
+  padding: 32px 0px 8px 0px;
+}
+
+.lista__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 120px;
+  padding-bottom: 24px;
+}
+
+.lista__menu-link {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.lista__menu-link:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--font-secundaria);
+  padding: 4px;
+  border-radius: 24px;
+  transition: .5s;
+}
+
