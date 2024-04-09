@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="./assets/teste3.png" type="image/x-icon" />
     <title>JMR COSMETICOS</title>
   </head>
@@ -45,5 +47,45 @@
         </ul>
       </div>
     </header>
+
+    <section class="carrossel">
+      <div class="carrossel__container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./assets/banner_1.png" alt="banner com uma mulher em fundo tons marrons" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/banner_4.png" alt="banner com cores em tons rosados" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/banner_3.png" alt="banner com uma mulher com ceu azul" />
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-swiper-autoplay="3000"></div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        autoplay: {
+          delay: 4000, // Delay entre os slides (em milissegundos)
+          disableOnInteraction: false, // Impede que o autoplay seja desativado quando o usuário interage com o carrossel
+        },
+        pagination: {
+          el: ".swiper-pagination",         
+          type: "bullets",
+          
+        },
+      });
+    </script>
   </body>
 </html>
