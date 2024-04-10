@@ -79,7 +79,7 @@
 .lista__menu-link {
   text-decoration: none;
   color: var(--cor-secundaria);
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -88,6 +88,5 @@
   color: var(--font-secundaria);
   padding: 4px;
   border-radius: 24px;
-  transition: .5s;
+  transition: 0.5s;
 }
-
