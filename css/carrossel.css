@@ -1,16 +1,20 @@
 .carrossel {
   padding-top: 64px;
   padding-bottom: 24px;
-
 }
 
-.swiper-slide img {
+.imagem-carrossel {
   width: 100%;
 }
 
 .swiper-pagination {
   position: initial;
   margin: 0.5em 0;
+}
+
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background: var(--cor-terciaria) !important;
+  opacity: 1;
 }
 
 .texto-img1 {
@@ -23,7 +27,7 @@
 
 .botao-img1 {
   position: absolute;
-  top: 58%; 
+  top: 58%;
   text-decoration: none;
   background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
@@ -46,10 +50,9 @@
   text-align: center;
 }
 
-
 .botao-img2 {
   position: absolute;
-  top: 72%; 
+  top: 72%;
   text-decoration: none;
   font-weight: bold;
   background-color: var(--cor-secundaria);
@@ -75,7 +78,7 @@
 
 .botao-img3 {
   position: absolute;
-  top: 86%; 
+  top: 86%;
   text-decoration: none;
   background-color: var(--cor-terciaria);
   color: var(--cor-secundaria);

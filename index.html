@@ -50,30 +50,28 @@
 
     <section class="carrossel">
       <div class="carrossel__container">
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-          <div class="swiper-slide" data-swiper-autoplay="3000"></div>
+        <div class="swiper swiper1">
+          <div class="swiper-pagination swiper-pagination1"></div>  
+          <div class="swiper-slide" data-swiper-autoplay="3000"></div>           
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">             
               <h1 class="texto-img1">Linha completa de pincéis de maquiagem</h1>
               <a href="#" class="botao-img1">COMPRAR</a>
-              <img src="./assets/banner_1.png" alt="banner com mulheres em fundo tons marrons" />
+              <img src="./assets/banner_1.png" alt="banner com mulheres em fundo tons marrons" class="imagem-carrossel"/>
             </div>
 
             <div class="swiper-slide">
               <h1 class="texto-img2">Acentue sua beleza com nossas paletas de sombras e batons </h1>              
               <a href="#"class="botao-img2">COMPRAR</a>
-              <img src="./assets/banner_2.png" alt="banner com cores em tons rosados" />
+              <img src="./assets/banner_2.png" alt="banner com cores em tons rosados" class="imagem-carrossel"/>
             </div>
 
             <div class="swiper-slide">
               <h1 class="texto-img3">Nova linha para todos os tipos de pele<h1>
               <a href="#" class="botao-img3">COMPRAR</a>
-              <img src="./assets/banner_3.png" alt="banner com uma mulher com ceu azul" />
-            </div>          
+              <img src="./assets/banner_3.png" alt="banner com uma mulher com ceu azul" class="imagem-carrossel"/>
+            </div> 
+               
           </div>            
         </div>
       </div>
@@ -92,28 +90,108 @@
       </div>
     </section>
 
-    <section class="produtos">
-      <div class="produtos__card">
+ 
 
+    <section class="produtos">
+      <h1 class="produtos__titulo">OS PRODUTOS MAIS VENDIDOS</h1>
+      <div class="produtos__container">
+        <div class="swiper swiper2">
+          <div class="swiper-pagination swiper-pagination2"></div>  
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">         
+              <div class="card-produto">    
+                <h1 class="texto-produtos">Lápis para olhos</h1>              
+                <img src="./assets/produto_1.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 32,99</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+              </div>
+            </div> 
+
+            <div class="swiper-slide"> 
+              <div class="card-produto">               
+                <h1 class="texto-produtos">Batom 3D Gliter</h1>              
+                <img src="./assets/produto_2.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 29,90</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide"> 
+              <div class="card-produto">            
+                <h1 class="texto-produtos">Paleta de sombras</h1>              
+                <img src="./assets/produto_3.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 65,99</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">  
+              <div class="card-produto">                 
+                <h1 class="texto-produtos">Pincel longo lábios </h1>              
+                <img src="./assets/produto_4.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 45,90</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide"> 
+              <div class="card-produto">            
+                <h1 class="texto-produtos">Batom com brilho </h1>              
+                <img src="./assets/produto_5.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 19,95</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">  
+              <div class="card-produto">              
+                <h1 class="texto-produtos">Rimel volume extra </h1>              
+                <img src="./assets/produto_6.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 33,90</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">  
+              <div class="card-produto">            
+                <h1 class="texto-produtos">Hydra pro </h1>              
+                <img src="./assets/produto_7.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 67,95</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+              </div>
+            </div>
+        
+          </div>            
+        </div>
       </div>
     </section>
 
-
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper(".swiper", {
+      const swiper = new Swiper(".swiper1", {
         spaceBetween: 10,
         slidesPerView: 1,
         autoplay: {
           delay: 5000, // Delay entre os slides (em milissegundos)
           disableOnInteraction: false, // Impede que o autoplay seja desativado quando o usuário interage com o carrossel
         },
+        paginationClickable: true,
         pagination: {
-          el: ".swiper-pagination",         
-          type: "bullets",
-          
+          el: ".swiper-pagination1",         
+          type: "bullets",          
+        },
+      });
+
+      const swiper2 = new Swiper(".swiper2", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        paginationClickable: true,
+        pagination: {
+          el: ".swiper-pagination2",         
+          type: "bullets",          
         },
       });
     </script>
+    
   </body>
 </html>

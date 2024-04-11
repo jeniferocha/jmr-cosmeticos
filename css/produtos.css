@@ -1,0 +1,53 @@
+.produtos {
+  background: var(--cor-terciaria);
+  padding: 24px 46px;
+}
+
+
+.produtos__titulo {
+  color: var(--cor-secundaria);
+  padding: 32px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.card-produto {
+  background: var(--cor-secundaria);
+  border-radius: 24px;
+  text-align: center;
+  padding: 6% 0;
+  font-size: 18px;
+  padding-bottom: 32px;
+}
+
+.texto-produtos {
+  padding: 0 32px;
+  font-size: 24px;
+}
+
+.preco-produtos {
+  padding: 24px;
+  font-size: 26px;
+}
+
+.botao-produtos {
+  text-decoration: none;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  font-size: 14px;
+  border-radius: 24px;
+  padding: 14px;
+  font-family: var(--fonte-secundaria);
+}
+
+.imagem-produtos {
+  width: 54%;
+}
+
+
+.swiper-pagination2 > .swiper-pagination-bullet-active {
+    background: var(--cor-primaria) !important;
+    opacity: 1;    
+  }
+
+  

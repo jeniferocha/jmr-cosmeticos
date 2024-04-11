@@ -2,6 +2,7 @@
 @import url(./css/header.css);
 @import url(./css/carrossel.css);
 @import url(./css/informacoes.css);
+@import url(./css/produtos.css);
 
 * {
   margin: 0;
@@ -10,7 +11,7 @@
 
 :root {
   --cor-primaria: #080303;
-  --cor-secundaria: #f1f1f1;
+  --cor-secundaria: #ffffff;
   --cor-terciaria: #e67676;
   --cor-quartenaria: #b822fd;
 
