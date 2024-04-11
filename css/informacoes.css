@@ -1,8 +1,6 @@
 .informacoes__container {
   display: flex;
   justify-content: center;
-  padding: 46px;
-  gap: 46px;
 }
 
 .card-informacoes {
@@ -12,6 +10,7 @@
   flex-direction: column;
   gap: 32px;
   width: 36%;
+  padding-left: 32px;
 }
 .card-informacoes h1 {
   font-size: 46px;
@@ -33,6 +32,12 @@
   padding: 12px;
   text-align: center;
   font-family: var(--fonte-secundaria);
+}
+
+.img-informacoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-informacoes img {

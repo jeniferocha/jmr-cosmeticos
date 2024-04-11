@@ -1,6 +1,7 @@
 .carrossel {
-  padding-top: 80px;
+  padding-top: 64px;
   padding-bottom: 24px;
+
 }
 
 .swiper-slide img {
@@ -15,14 +16,14 @@
 .texto-img1 {
   position: absolute;
   top: 20%;
-  padding-left: 40%;
-  font-size: 56px;
+  padding-left: 10%;
+  font-size: 54px;
   font-family: var(--fonte-secundaria);
 }
 
 .botao-img1 {
   position: absolute;
-  top: 86%; 
+  top: 58%; 
   text-decoration: none;
   background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
@@ -32,57 +33,51 @@
   padding: 12px;
   text-align: center;
   font-family: var(--fonte-secundaria);
-  left: 56%;
+  left: 18%;
 }
 
 .texto-img2 {
   position: absolute;
-  top: 36%;
+  top: 42%;
   font-size: 48px;
   font-family: var(--fonte-secundaria);
-  padding-right: 70%;
+  color: var(--cor-secundaria);
+  padding-left: 10%;
   text-align: center;
 }
 
-.texto-img2-1 {
-  position: absolute;
-  top: 26%;
-  font-size: 42px;
-  font-family: var(--fonte-secundaria);
-  padding-left: 68%;
-  text-align: center;
-}
 
 .botao-img2 {
   position: absolute;
-  top: 86%; 
+  top: 72%; 
   text-decoration: none;
-  background-color: var(--cor-primaria);
-  color: var(--cor-secundaria);
+  font-weight: bold;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
   font-size: 14px;
   border-radius: 24px;
   width: 14%;
   padding: 12px;
   text-align: center;
   font-family: var(--fonte-secundaria);
-  left: 76%;
+  left: 42%;
 }
 
 .texto-img3 {
   position: absolute;
-  top: 10%;
-  font-size: 46px;
+  top: 72%;
+  font-size: 44px;
   font-family: var(--fonte-secundaria);
-  padding: 0 32% 0 20%;
+  padding: 0 12%;
   text-align: center;
-  color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
 }
 
 .botao-img3 {
   position: absolute;
-  top: 82%; 
+  top: 86%; 
   text-decoration: none;
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
   color: var(--cor-secundaria);
   font-size: 14px;
   border-radius: 24px;
@@ -90,5 +85,5 @@
   padding: 12px;
   text-align: center;
   font-family: var(--fonte-secundaria);
-  right: 48%;
+  right: 22%;
 }
