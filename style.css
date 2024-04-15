@@ -17,10 +17,28 @@
   --cor-terciaria: #e67676;
   --cor-quartenaria: #a04f6e;
 
+  --cor-scrollbar: #f1f1f1;
+
   --fonte-primaria: "Montserrat", sans-serif;
   --fonte-secundaria: "Krona One", sans-serif;
 }
 
 body {
   font-family: var(--fonte-primaria);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-scrollbar);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-terciaria);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-quartenaria);
 }
