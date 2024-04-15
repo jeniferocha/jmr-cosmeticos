@@ -3,6 +3,7 @@
 @import url(./css/carrossel.css);
 @import url(./css/informacoes.css);
 @import url(./css/produtos.css);
+@import url(./css/rodape.css);
 
 * {
   margin: 0;
@@ -13,7 +14,7 @@
   --cor-primaria: #080303;
   --cor-secundaria: #ffffff;
   --cor-terciaria: #e67676;
-  --cor-quartenaria: #b822fd;
+  --cor-quartenaria: #a04f6e;
 
   --fonte-primaria: "Montserrat", sans-serif;
   --fonte-secundaria: "Krona One", sans-serif;

@@ -3,6 +3,13 @@
   padding: 24px 46px;
 }
 
+.produtos:nth-child(2) {
+  background: var(--cor-primaria);
+}
+
+#produtos {
+  background: var(--cor-quartenaria);
+}
 
 .produtos__titulo {
   color: var(--cor-secundaria);
@@ -41,13 +48,15 @@
 }
 
 .imagem-produtos {
-  width: 54%;
+  width: 50%;
 }
 
-
 .swiper-pagination2 > .swiper-pagination-bullet-active {
-    background: var(--cor-primaria) !important;
-    opacity: 1;    
-  }
+  background: var(--cor-primaria) !important;
+  opacity: 1;
+}
 
-  
+.swiper-pagination3 > .swiper-pagination-bullet-active {
+    background: var(--cor-terciaria) !important;
+    opacity: 1;
+  }

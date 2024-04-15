@@ -13,7 +13,7 @@
 }
 
 .swiper-pagination > .swiper-pagination-bullet-active {
-  background: var(--cor-terciaria) !important;
+  background: var(--cor-quartenaria) !important;
   opacity: 1;
 }
 

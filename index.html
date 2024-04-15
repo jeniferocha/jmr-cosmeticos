@@ -90,8 +90,6 @@
       </div>
     </section>
 
- 
-
     <section class="produtos">
       <h1 class="produtos__titulo">OS PRODUTOS MAIS VENDIDOS</h1>
       <div class="produtos__container">
@@ -166,6 +164,108 @@
       </div>
     </section>
 
+    <section class="informacoes">
+      <div class="informacoes__container">
+        <div class="card-informacoes">
+          <h1><strong>Realce sua beleza única</strong></h1>
+          <p>com nossos batons em uma infinidade de tons e acabamentos, desde os clássicos nude até os ousados e vibrantes, proporcionando lábios irresistíveis e cheios de cor</p>
+          <a href="#">COMPRAR</a>
+        </div>
+        <div class="img-informacoes">
+          <img src="./assets/info_2.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="produtos" id="produtos">
+      <h1 class="produtos__titulo">NOVA LINHA COMPLETA</h1>
+      <div class="produtos__container">
+        <div class="swiper swiper3">
+          <div class="swiper-pagination swiper-pagination3"></div>  
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">         
+              <div class="card-produto">    
+                <h1 class="texto-produtos">Lápis para olhos</h1>              
+                <img src="./assets/produto_1.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 32,99</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+              </div>
+            </div> 
+
+            <div class="swiper-slide"> 
+              <div class="card-produto">               
+                <h1 class="texto-produtos">Batom 3D Gliter</h1>              
+                <img src="./assets/produto_2.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 29,90</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide"> 
+              <div class="card-produto">            
+                <h1 class="texto-produtos">Paleta de sombras</h1>              
+                <img src="./assets/produto_3.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 65,99</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">  
+              <div class="card-produto">                 
+                <h1 class="texto-produtos">Pincel longo lábios </h1>              
+                <img src="./assets/produto_4.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 45,90</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide"> 
+              <div class="card-produto">            
+                <h1 class="texto-produtos">Batom com brilho </h1>              
+                <img src="./assets/produto_5.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 19,95</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">  
+              <div class="card-produto">              
+                <h1 class="texto-produtos">Rimel volume extra </h1>              
+                <img src="./assets/produto_6.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 33,90</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">  
+              <div class="card-produto">            
+                <h1 class="texto-produtos">Hydra pro </h1>              
+                <img src="./assets/produto_7.jpg" alt="" class="imagem-produtos"/>
+                <h3 class="preco-produtos">R$ 67,95</h3>
+                <a href="#" class="botao-produtos">COMPRAR</a>
+              </div>
+            </div>
+        
+          </div>            
+        </div>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <h2 class="rodape__titulo">Desenvolvido por Jenifer Rocha</h2>
+      <ul class="lista-rodape">
+        <li class="lista-rodape__titulo">Todos os direitos reservados</li>
+        <li class="lista-rodape__item">
+          <img src="./assets/icones/linkedin.png" alt="Logo linkedin" />
+          <a href="#" class="lista-rodape__link">Linkedin</a>
+        </li>
+        <li class="lista-rodape__item">
+          <img src="./assets/icones/github.png" alt="Logo github" />
+          <a href="#" class="lista-rodape__link">Github</a>
+        </li>
+      </ul>
+    </footer>
+
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper1", {
@@ -188,6 +288,16 @@
         paginationClickable: true,
         pagination: {
           el: ".swiper-pagination2",         
+          type: "bullets",          
+        },
+      });
+
+      const swiper3 = new Swiper(".swiper3", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        paginationClickable: true,
+        pagination: {
+          el: ".swiper-pagination3",         
           type: "bullets",          
         },
       });
