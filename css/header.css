@@ -1,7 +1,7 @@
 .cabecalho {
   background-color: var(--cor-primaria);
   width: 100%;
-  height: 80px;
+  height: 100%;
 }
 
 .container {
@@ -12,9 +12,14 @@
 
 .container__pesquisar {
   display: flex;
+  display: block;
   justify-content: flex-start;
   padding: 16px;
   width: 20%;
+}
+
+.container__pesquisar-mobile {
+  display: none;
 }
 
 .pesquisar-item {
@@ -54,7 +59,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 24px;
-  padding-right: 32px;
+  padding-right: 24px;
   width: 20%;
 }
 
@@ -89,4 +94,52 @@
   padding: 4px;
   border-radius: 24px;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 8px 0px 4px 0px;
+  }
+
+  .container__logo {
+    display: flex;
+    justify-content: start;
+    padding-left: 4px;
+  }
+
+  .logo-jmr {
+    width: 80px;
+  }
+
+  .container__icones {
+    gap: 16px;
+    padding-right: 16px;
+  }
+
+  .container__pesquisar {
+    display: none;
+  }
+
+  .container__pesquisar-mobile {
+    display: block;
+    text-align: center;
+  }
+
+  .pesquisar-item {
+    width: 90%;
+    margin-top: 8px;
+    padding: 8px;
+  }
+
+  .lista__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 18px;
+    padding-bottom: 18px;
+  }
+
+  .lista__menu-link {
+    font-weight: 600;
+  }
 }
