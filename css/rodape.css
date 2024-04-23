@@ -1,83 +1,99 @@
 .rodape {
   background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
-  padding: 3em 0 8em 0;
+  padding: 46px 0px 180px 0px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .rodape__logo {
-  width: 16%; 
+  width: 16%;
 }
 
 .lista-rodape {
-  display: none;
-  list-style-type: none;
-}
-
-.lista-rodape__titulo {
-  font-family: var(--fonte-secundaria);
-  padding-left: 8px;
-}
-
-.rodape2 {
-  display: flex;
-    justify-content: center;
-}
-
-.lista-rodape2 {
   display: block;
 }
 
-.lista-rodape__item2 img {
-  width: 24px;
+.rodape__v2 {
+  display: none;
 }
 
-.lista-rodape__link2 {
-  width: 24px;
+.lista-rodape__item {
+  display: flex;
+  align-items: center;
+  margin: 0.6em 0;
 }
 
-@media screen and (min-width: 1024px) {
+.lista-rodape__link {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  margin-left: 0.6em;
+}
+
+.lista-rodape__titulo {
+  font-size: 14px;
+  color: var(--cor-secundaria);
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.rodape__titulo {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 600px) {
   .rodape {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0px 16px 0px;
   }
-
   .lista-rodape {
-    display: block;
-  }
-
-  .lista-rodape2 {
     display: none;
   }
 
-  .lista-rodape__item {
-    display: flex;
-    align-items: center;
-    margin: 0.6em 0;
+  .rodape__v2 {
+    display: none;
   }
 
-  .lista-rodape__link {
-    color: var(--cor-secundaria);
-    text-decoration: none;
-    margin-left: 0.6em;
-  }
-
-  .lista-rodape__titulo {
-    font-size: 14px;
-    color: var(--cor-secundaria);
-  }
-
-  .rodape__titulo {
-    font-size: 24px;
+  .rodape__logo {
+    width: 30%;
   }
 }
 
-@media screen and (min-width: 1728px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .rodape {
+    gap: 12px;
+    padding: 28px 0px 92px 0px;
+  }
   .lista-rodape {
-    border-left: 1px solid var(--cor-secundaria);
-    padding-left: 1em;
+    display: none;
+  }
+  .rodape__v2 {
+    display: block;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding-right: 8px;
+  }
+  .rodape__logo {
+    width: 28%;
+    height: 24%;
   }
 
-  .rodape {
-    padding: 3em 0;
+  .rodape__item {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 8px;
+    gap: 8px;
+  }
+  .rodape__item img {
+    width: 32%;
+  }
+
+  .rodape__item a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
   }
 }
