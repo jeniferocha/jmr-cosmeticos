@@ -59,6 +59,7 @@
 
   .card-informacoes h1 {
     font-size: 14px;
+    padding: 0px 6px;
   }
 
   .card-informacoes p {
@@ -90,6 +91,7 @@
 
   .card-informacoes h1 {
     font-size: 32px;  
+    padding: 0px 6px;
   }
   
   .card-informacoes p {

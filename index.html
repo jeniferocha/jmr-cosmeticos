@@ -55,7 +55,7 @@
 
     <section class="carrossel">
       <div class="carrossel__container">
-        <div class="swiper swiper1">
+        <div class="swiper swiper__carrossel">
           <div class="swiper-pagination swiper-pagination1"></div>  
           <div class="swiper-slide" data-swiper-autoplay="3000"></div>           
           <div class="swiper-wrapper">
@@ -163,7 +163,6 @@
                 <a href="#" class="botao-produtos">COMPRAR</a>
               </div>
             </div>
-        
           </div>            
         </div>
       </div>
@@ -250,7 +249,7 @@
                 <a href="#" class="botao-produtos">COMPRAR</a>
               </div>
             </div>
-        
+
           </div>            
         </div>
       </div>
@@ -334,38 +333,68 @@
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper(".swiper1", {
+      
+      const swiper = new Swiper(".swiper__carrossel", {
         spaceBetween: 10,
         slidesPerView: 1,
         autoplay: {
           delay: 5000, 
           disableOnInteraction: false, 
-        },
-        paginationClickable: true,
+        },        
         pagination: {
           el: ".swiper-pagination1",         
-          type: "bullets",          
+          type: "bullets",                  
         },
       });
 
       const swiper2 = new Swiper(".swiper2", {
-        spaceBetween: 30,
-        slidesPerView: 4,
-        paginationClickable: true,
+        spaceBetween: 50,
+        slidesPerView: 1,        
         pagination: {
           el: ".swiper-pagination2",         
-          type: "bullets",          
+          type: "bullets",  
+          dynamicBullets: true,        
         },
+        breakpoints: {        
+        1024: {
+          slidesPerView: 4, 
+          spaceBetween: 30, 
+        },
+        850: {
+          slidesPerView: 3, 
+          spaceBetween: 20, 
+        },        
+        600: {
+          slidesPerView: 2, 
+          spaceBetween: 30, 
+        }
+      }
       });
 
+
+
       const swiper3 = new Swiper(".swiper3", {
-        spaceBetween: 30,
-        slidesPerView: 4,
-        paginationClickable: true,
+        spaceBetween: 50,
+        slidesPerView: 1,        
         pagination: {
           el: ".swiper-pagination3",         
-          type: "bullets",          
+          type: "bullets",
+          dynamicBullets: true,           
         },
+        breakpoints: {        
+        1024: {
+          slidesPerView: 4, 
+          spaceBetween: 30, 
+        },
+        850: {
+          slidesPerView: 3, 
+          spaceBetween: 20, 
+        },        
+        600: {
+          slidesPerView: 2, 
+          spaceBetween: 20, 
+        }
+      }
       });
     </script>
     
