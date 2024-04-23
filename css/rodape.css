@@ -21,13 +21,13 @@
 .lista-rodape__item {
   display: flex;
   align-items: center;
-  margin: 0.6em 0;
+  margin: 12px 0;
 }
 
 .lista-rodape__link {
   color: var(--cor-secundaria);
   text-decoration: none;
-  margin-left: 0.6em;
+  margin-left: 12px;
 }
 
 .lista-rodape__titulo {
