@@ -1,6 +1,6 @@
-.carrossel {
+/* .carrossel {
   padding-bottom: 24px;
-}
+} */
 
 .imagem-carrossel {
   width: 100%;
@@ -91,87 +91,84 @@
 }
 
 @media screen and (max-width: 600px) {
-  .texto-img1 {     
-    top: 12%;
+  .texto-img1 {
+    top: 10%;
     padding-left: 10%;
-    font-size: 22px;
+    font-size: 20px;
     font-family: var(--fonte-secundaria);
-  } 
-
-  .botao-img1 {      
-    top: 62%;   
-    font-size: 8px;   
-    width: 14%;
-    padding: 10px;  
-    left: 68%;    
   }
 
-  .texto-img2 {  
+  .botao-img1 {
+    top: 62%;
+    font-size: 8px;
+    width: 14%;
+    padding: 10px;
+    left: 68%;
+  }
+
+  .texto-img2 {
     top: 22%;
-    font-size: 18px; 
-    padding-left: 2%;     
-  }
-  
-  .botao-img2 {   
-    top: 68%;    
-    font-size: 8px;   
-    width: 14%;
-    padding: 10px;    
-    left: 68%;   
+    font-size: 18px;
+    padding-left: 2%;
   }
 
-  .texto-img3 {    
-    top: 48%;
-    font-size: 16px;     
-  }
-  
-  .botao-img3 {    
-    top: 20%;  
-    font-size: 8px;    
+  .botao-img2 {
+    top: 68%;
+    font-size: 8px;
     width: 14%;
-    padding: 10px;  
+    padding: 10px;
+    left: 68%;
+  }
+
+  .texto-img3 {
+    top: 48%;
+    font-size: 16px;
+  }
+
+  .botao-img3 {
+    top: 20%;
+    font-size: 8px;
+    width: 14%;
+    padding: 10px;
     right: 8%;
   }
-
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-  .texto-img1 {   
+  .texto-img1 {
     top: 18%;
     padding-left: 4%;
     font-size: 40px;
   }
-  
+
   .botao-img1 {
-    top: 72%;   
-    font-size: 8px;   
+    top: 72%;
+    font-size: 8px;
     width: 12%;
-    padding: 10px;  
+    padding: 10px;
     left: 68%;
   }
 
-  .texto-img2 {  
+  .texto-img2 {
     top: 22%;
     font-size: 32px;
     padding-left: 4%;
- 
   }
-  
-  .botao-img2 {   
+
+  .botao-img2 {
     top: 72%;
-    font-size: 8px;   
+    font-size: 8px;
     width: 12%;
     padding: 10px;
     left: 78%;
   }
 
-  .texto-img3 {  
+  .texto-img3 {
     top: 56%;
-    font-size: 32px;   
-
+    font-size: 32px;
   }
-  
-  .botao-img3 {    
+
+  .botao-img3 {
     top: 74%;
     font-size: 8px;
     width: 12%;
