@@ -51,6 +51,16 @@
   width: 50%;
 }
 
+.swiper-pagination2 {
+  position: initial;
+  margin: -8px 0px;
+}
+
+.swiper-pagination3 {
+  position: initial;
+  margin: 14px 0px;
+}
+
 .swiper-pagination2 > .swiper-pagination-bullet-active {
   background: var(--cor-primaria) !important;
   opacity: 1;
@@ -100,7 +110,7 @@
     font-size: 28px;
   }
 
-  .texto-produtos {  
+  .texto-produtos {
     font-size: 18px;
   }
 
