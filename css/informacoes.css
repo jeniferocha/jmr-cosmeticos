@@ -1,7 +1,7 @@
 .informacoes__container {
   display: flex;
   justify-content: center;
-  padding: 18px 0px;
+  padding: 24px 8px;
 }
 
 .card-informacoes {
@@ -50,7 +50,7 @@
 
 @media screen and (max-width: 600px) {
   .informacoes__container {
-    padding: 18px;
+    padding: 32px;
   }
   .card-informacoes {
     gap: 12px;
@@ -59,12 +59,12 @@
   }
 
   .card-informacoes h1 {
-    font-size: 14px;
+    font-size: 18px;
     padding: 0px 6px;
   }
 
   .card-informacoes p {
-    font-size: 10px;
+    font-size: 14px;
     padding: 6px;
   }
 

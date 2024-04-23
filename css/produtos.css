@@ -79,12 +79,14 @@
   bottom: -10px;
 }
 
+
 @media screen and (max-width: 600px) {
   .produtos__titulo {
     font-size: 20px;
   }
-  .card-produto {
-    width: 68%;
+  .card-produto {   
+    align-items: center;
+    left: 32px;
   }
 
   .texto-produtos {
@@ -103,6 +105,13 @@
     font-size: 8px;
     padding: 8px;
   }
+
+  .swiper2, .swiper3 {
+    width: 60%; 
+    margin: 0 auto; 
+    overflow: hidden; 
+  }
+ 
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
