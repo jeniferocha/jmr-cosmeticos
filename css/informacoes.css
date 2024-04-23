@@ -50,21 +50,21 @@
 
 @media screen and (max-width: 600px) {
   .informacoes__container {
-    padding: 32px;
+    padding: 28px 4px;
   }
   .card-informacoes {
-    gap: 12px;
+    gap: 8px;
     width: 60%;
     padding-left: 0%;
   }
 
   .card-informacoes h1 {
-    font-size: 18px;
+    font-size: 16px;
     padding: 0px 6px;
   }
 
   .card-informacoes p {
-    font-size: 14px;
+    font-size: 12px;
     padding: 6px;
   }
 

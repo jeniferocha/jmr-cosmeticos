@@ -89,7 +89,7 @@
 @media screen and (max-width: 600px) {
   .texto-img1 {
     top: 10%;
-    padding-left: 10%;
+    padding-left: 16px;
     font-size: 20px;
     font-family: var(--fonte-secundaria);
   }
@@ -104,14 +104,14 @@
 
   .texto-img2 {
     top: 18%;
-    font-size: 18px;
-    padding-left: 2%;
+    font-size: 16px;
+    padding:0px 12px;
   }
 
   .botao-img2 {
     top: 68%;
     font-size: 8px;
-    width: 14%;
+    width: 16%;
     padding: 10px;
     left: 76%;
   }
@@ -124,7 +124,7 @@
   .botao-img3 {
     top: 68%;
     font-size: 8px;
-    width: 14%;
+    width: 16%;
     padding: 8px;
     right: 4%;
   }
