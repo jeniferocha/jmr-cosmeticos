@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="../assets/teste3.png" type="image/x-icon" />
+    <title>CADASTRAR</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <div class="container__pesquisar">
+          <input type="search" class="pesquisar-item" placeholder="Pesquise aqui" />
+        </div>
+
+        <div class="container__logo">
+          <a href="../index.html">
+            <img src="../assets/logo.png" alt="Logo da JMR" class="logo-jmr" />
+          </a>
+        </div>
+
+        <div class="container__icones">
+          <a href="https://jmr-cosmeticos-desenvolve.vercel.app">
+            <img src="../assets/icones/favoritos.png" alt="Meus Favoritos" class="container__imagem"
+          /></a>
+          <a href="#">
+            <img src="../assets/icones/compras.png" alt="Minhas Compras" class="container__imagem" />
+          </a>
+          <a href="#">
+            <img src="../assets/icones/usuario.png" alt="Minha Conta" class="container__imagem" />
+          </a>
+        </div>
+      </div>
+
+      <div class="container__pesquisar-mobile">
+        <input type="search" class="pesquisar-item" placeholder="Pesquise aqui" />
+      </div>
+    </header>
+    <section class="cadastro">
+      <div class="cadastro__conteudo">
+        <h3 class="cadastro-titulo">SEUS DADOS</h3>
+        <form class="cadastro__formulario" id="data-formulario">
+          <div class="formulario__campo">
+            <label class="campo__etiqueta" for="nome">Nome</label>
+            <input name="nome" id="nome" class="campo__escrita" type="text" required />
+          </div>
+          <div class="formulario__campo">
+            <label class="campo__etiqueta" for="cpf">CPF</label>
+            <input name="cpf" id="cpf" class="campo__escrita" type="text" required />
+          </div>
+          <div class="formulario__campo">
+            <label class="campo__etiqueta" for="email">E-mail</label>
+            <input name="email" id="email" class="campo__escrita" type="email" required />
+          </div>
+          <div class="formulario__campo">
+            <label class="campo__etiqueta" for="senha">Senha</label>
+            <input name="senha" id="senha" class="campo__escrita" type="password" required />
+          </div>
+          <button class="botao_entrar" type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <div class="rodape__v1">
+        <img src="../assets/logo.png" alt="Logo JMR" class="rodape__logo" />
+        <ul class="lista-rodape">
+          <li class="lista-rodape__titulo">DÚVIDAS</li>
+          <li class="lista-rodape__item">
+            <a href="#" class="lista-rodape__link">Perguntas Frequentes</a>
+          </li>
+          <li class="lista-rodape__item">
+            <a href="#" class="lista-rodape__link">Formas de Pagamento</a>
+          </li>
+          <li class="lista-rodape__item">
+            <a href="#" class="lista-rodape__link">Frete e Entrega</a>
+          </li>
+          <li class="lista-rodape__item">
+            <a href="#" class="lista-rodape__link">Trocas e Devoluções</a>
+          </li>
+        </ul>
+
+        <ul class="lista-rodape">
+          <li class="lista-rodape__titulo">INSTITUCIONAL</li>
+          <li class="lista-rodape__item">
+            <a href="#" class="lista-rodape__link">Nossa História</a>
+          </li>
+          <li class="lista-rodape__item">
+            <a href="#" class="lista-rodape__link">Blog</a>
+          </li>
+          <li class="lista-rodape__item">
+            <a href="#" class="lista-rodape__link">Faça sua Make</a>
+          </li>
+          <li class="lista-rodape__item">
+            <a href="#" class="lista-rodape__link">Trabalhe Conosco</a>
+          </li>
+        </ul>
+
+        <ul class="lista-rodape">
+          <li class="lista-rodape__titulo">LINKS ÚTEIS</li>
+          <li class="lista-rodape__item">
+            <a href="#" class="lista-rodape__link">Termos de Uso</a>
+          </li>
+          <li class="lista-rodape__item">
+            <a href="#" class="lista-rodape__link">Política de Privacidade</a>
+          </li>
+          <li class="lista-rodape__item">
+            <a href="#" class="lista-rodape__link">Preferências de Cookies</a>
+          </li>
+          <li class="lista-rodape__item">
+            <a href="#" class="lista-rodape__link">Código de Defesa do Consumidor</a>
+          </li>
+          <li class="lista-rodape__item">
+            <a href="#" class="lista-rodape__link">Preferências de Cookies</a>
+          </li>
+        </ul>
+      </div>
+      <div class="rodape__v2">
+        <div class="rodape__item">
+          <a href="https://www.linkedin.com/in/jenifermartinsdarocha" class="rodape__link">
+            <img src="../assets/icones/linkedin.png" alt="Logo linkedin" />
+          </a>
+          <a href="https://www.github.com/jeniferocha" class="rodape__link">
+            <img src="../assets/icones/github.png" alt="Logo github" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="container_mensagens">
+      <span id="mensagem_conteudo"></span>
+    </div>
+
+    <script type="module" src="../js/cadastro.js"></script>
+  </body>
+</html>
