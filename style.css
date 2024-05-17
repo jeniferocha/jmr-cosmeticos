@@ -5,6 +5,9 @@
 @import url(./css/produtos.css);
 @import url(./css/contato.css);
 @import url(./css/rodape.css);
+@import url(./css/alerts.css);
+@import url(./css/login.css);
+@import url(./css/cadastro.css);
 
 * {
   margin: 0;
