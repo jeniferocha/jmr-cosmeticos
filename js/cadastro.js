@@ -14,10 +14,15 @@ formulario.addEventListener("submit", (e) => {
 
   console.log("Dados do usuário:", dadosUsuario);
 
-  localStorage.setItem("cadastro", JSON.stringify(dadosUsuario));
+  let cadastros = JSON.parse(localStorage.getItem("cadastros")) || [];
+  cadastros.push(dadosUsuario);
+
+  localStorage.setItem("cadastros", JSON.stringify(cadastros));
 
   mostrarMensagem("sucesso", "Cadastro realizado, aguarde você será redirecionado.");
   setTimeout(() => {
     window.location.href = "../index.html";
   }, 2500);
 });
+
+
