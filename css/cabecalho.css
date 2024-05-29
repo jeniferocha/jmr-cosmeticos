@@ -124,6 +124,7 @@
   .container__pesquisar-mobile {
     display: block;
     text-align: center;
+    padding-bottom: 8px;
   }
 
   .pesquisar-item {

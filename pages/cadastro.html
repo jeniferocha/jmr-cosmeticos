@@ -29,7 +29,7 @@
           <a href="#">
             <img src="../assets/icones/compras.png" alt="Minhas Compras" class="container__imagem" />
           </a>
-          <a href="#">
+          <a href="./pages/login.html">
             <img src="../assets/icones/usuario.png" alt="Minha Conta" class="container__imagem" />
           </a>
         </div>
@@ -49,7 +49,8 @@
           </div>
           <div class="formulario__campo">
             <label class="campo__etiqueta" for="cpf">CPF</label>
-            <input name="cpf" id="cpf" class="campo__escrita" type="text" required />
+            <input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" required type="text"
+                        minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" />
           </div>
           <div class="formulario__campo">
             <label class="campo__etiqueta" for="email">E-mail</label>

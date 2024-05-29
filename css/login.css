@@ -6,6 +6,7 @@
   padding: 42px 0px 240px 0px;
   background: var(--cor-quartenaria);
 }
+
 .login-titulo {
   padding: 20px;
 }
@@ -20,6 +21,15 @@
   color: var(--cor-primaria);
 }
 
+.campo__escrita {
+  align-items: center;
+  text-align: center;
+  border-radius: 24px;
+  padding: 6px;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
 #inputEmail,
 #inputSenha {
   align-items: center;
@@ -30,9 +40,14 @@
 }
 
 .recuperecao_senha {
+  text-decoration: underline;
+  background: transparent;
+  font-size: 14px;
   font-weight: 600;
   color: var(--cor-primaria);
   padding-bottom: 12px;
+  border: none;
+  cursor: pointer;
 }
 
 .botao_entrar {
@@ -67,4 +82,33 @@
 .botao_cadastrar:hover {
   background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
+}
+
+
+@media screen and (max-width: 600px) {
+  .campo__escrita {
+    width: 90%;
+  }
+
+  .botao_cadastrar {
+    width: 36%;
+  }
+
+  .botao_entrar {
+    width: 36%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .campo__escrita {
+    width: 90%;
+  }
+
+  .botao_cadastrar {
+    width: 36%;
+  }
+
+  .botao_entrar {
+    width: 36%;
+  }
 }

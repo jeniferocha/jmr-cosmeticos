@@ -3,6 +3,15 @@ import mostrarMensagem from "./alerts.js";
 const emailLogin = document.getElementById("email");
 const senhaLogin = document.getElementById("senha");
 const formulario = document.getElementById("data-formulario");
+const recuperacaoSenha = document.getElementById("recuperar_senha");
+
+recuperacaoSenha.addEventListener("click", (event) => {
+  event.preventDefault();
+  mostrarMensagem("alerta", "Recuperação de senha enviado para o e-mail.");
+  setTimeout(() => {
+    window.location.href = "../index.html";
+  }, 2500);
+});
 
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();
