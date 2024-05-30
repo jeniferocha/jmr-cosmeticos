@@ -39,5 +39,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  renderCarrinho();
+  // renderCarrinho();
 });

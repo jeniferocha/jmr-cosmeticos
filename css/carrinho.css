@@ -36,3 +36,23 @@ h1 {
   padding: 14px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .carrinho li {
+    flex-direction: column;
+  }
+
+  .carrinho img {
+    width: 28%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .carrinho li {
+    flex-direction: column;
+  }
+
+  .carrinho img {
+    width: 28%;
+  }
+}

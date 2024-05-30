@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   limparCarrinhoButton.addEventListener("click", () => {
     localStorage.removeItem("carrinho");
+    totalPrecoElement.textContent = 'Total: R$ 0,00';
     while (carrinhoLista.firstChild) {
       carrinhoLista.removeChild(carrinhoLista.firstChild);
     }
