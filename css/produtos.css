@@ -79,6 +79,9 @@
   bottom: -10px;
 }
 
+.hidden {
+  display: none;
+}
 
 @media screen and (max-width: 600px) {
   .produtos__titulo {

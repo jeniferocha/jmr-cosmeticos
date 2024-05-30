@@ -5,9 +5,9 @@ function montarTitulo(tipo) {
     case "sucesso":
       return "<b>Sucesso!</b> <br />";
     case "alerta":
-      return "<b>Mensagem!</b> <br />";
+      return "<b>Alerta!</b> <br />";
     case "info":
-      return "<b>Adicionado!</b> <br />";
+      return "<b>Mensagem!</b> <br />";
     default:
       "";
   }
