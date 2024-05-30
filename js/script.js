@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       carrinho.push(produto);
       localStorage.setItem("carrinho", JSON.stringify(carrinho));
       mostrarMensagem("info", "Produto adicionado no carrinho!!");
-      renderCarrinho();
+      // renderCarrinho();
     });
   });
 
