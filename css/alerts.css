@@ -1,5 +1,5 @@
 .container_mensagens {
-    width: 50%;
+    width: 20%;
     overflow: hidden;
     padding: 24px;
     position: fixed;
@@ -10,7 +10,7 @@
   
   .mensagem {
     display: none;
-    width: 50%;
+    width: 40%;
     margin-left: auto;
     padding: 24px 16px;
     float: left;
@@ -18,7 +18,7 @@
     font-family: sans-serif;
     font-weight: 100;
     font-size: 16px;
-    min-width: 350px;
+    min-width: 250px;
     line-height: 24px;
   }
   
