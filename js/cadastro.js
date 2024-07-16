@@ -4,7 +4,7 @@ import ehUmCPF from "./valida-cpf.js";
 const formulario = document.getElementById("data-formulario");
 const camposDoFormulario = document.querySelectorAll("[required]");
 
-formulario.addEventListener("submit", (e) => {
+formulario.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const campoCPF = e.target.elements["cpf"];
@@ -14,23 +14,40 @@ formulario.addEventListener("submit", (e) => {
   }
 
   const dadosUsuario = {
-    nome: e.target.elements["nome"].value,
+    name: e.target.elements["nome"].value,
     cpf: e.target.elements["cpf"].value,
     email: e.target.elements["email"].value,
-    senha: e.target.elements["senha"].value,
+    password: e.target.elements["senha"].value,
   };
 
   console.log("Dados do usuário:", dadosUsuario);
 
-  let cadastros = JSON.parse(localStorage.getItem("cadastros")) || [];
-  cadastros.push(dadosUsuario);
+  // let cadastros = JSON.parse(localStorage.getItem("cadastros")) || [];
+  // cadastros.push(dadosUsuario);
 
-  localStorage.setItem("cadastros", JSON.stringify(cadastros));
+  // localStorage.setItem("cadastros", JSON.stringify(cadastros));
+  try {
+    const response = await fetch("http://localhost:3000/clientes", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dadosUsuario),
+    });
 
-  mostrarMensagem("sucesso", "Cadastro realizado, aguarde você será redirecionado.");
-  setTimeout(() => {
-    window.location.href = "../index.html";
-  }, 2500);
+    if (response.ok) {
+      mostrarMensagem("sucesso", "Cadastro realizado, aguarde você será redirecionado.");
+      setTimeout(() => {
+        window.location.href = "../index.html";
+      }, 2500);
+    } else {
+      const errorData = await response.json();
+      mostrarMensagem("erro", `Erro ao cadastrar: ${errorData.message}`);
+    }
+  } catch (error) {
+    console.error("Erro ao cadastrar cliente:", error);
+    mostrarMensagem("erro", "Erro ao cadastrar. Tente novamente mais tarde.");
+  }
 });
 
 camposDoFormulario.forEach((campo) => {

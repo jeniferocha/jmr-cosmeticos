@@ -1,4 +1,4 @@
-// import mostrarMensagem from "./js/alerts";
+//import mostrarMensagem from "./js/alerts";
 
 async function carregarProdutos() {
   try {
@@ -27,6 +27,7 @@ async function carregarProdutos() {
     });
     swiper2.update();
     swiper3.update();
+ 
 
     const comprarButtons = document.querySelectorAll(".botao-produtos");
     const carrinhoLista = document.getElementById("carrinho-lista");
@@ -61,10 +62,11 @@ async function carregarProdutos() {
         let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
         carrinho.push(produto);
         localStorage.setItem("carrinho", JSON.stringify(carrinho));
-        mostrarMensagem("info", "Produto adicionado no carrinho!!");
+        alert("Produto adicionado no carrinho!!");
         renderCarrinho();
       });
     });
+    
   } catch (error) {
     console.error("Erro ao carregar produtos:", error);
   }
