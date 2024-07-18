@@ -37,6 +37,9 @@ form {
   width: 50%;
   margin-bottom: 12px;
 }
+.botao_entrar{
+  margin-bottom: 12px;
+}
 
 
 @media screen and (max-width: 600px) {

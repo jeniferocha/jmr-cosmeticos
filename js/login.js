@@ -32,7 +32,7 @@ formulario.addEventListener("submit", async (e) => {
 
     if (response.ok) {
       const userLogado = await response.json();
-      console.log("Usuário logado:", userLogado); 
+      console.log("Usuário logado:", userLogado);
       localStorage.setItem("userLogado", JSON.stringify(userLogado));
       mostrarMensagem("sucesso", "Login realizado com sucesso.");
       setTimeout(() => {
@@ -40,7 +40,7 @@ formulario.addEventListener("submit", async (e) => {
       }, 2500);
     } else {
       const errorData = await response.json();
-      console.error("Erro ao realizar login:", errorData.message); 
+      console.error("Erro ao realizar login:", errorData.message);
       mostrarMensagem("erro", "E-mail ou senha incorreto.");
     }
   } catch (error) {

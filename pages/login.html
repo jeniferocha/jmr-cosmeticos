@@ -39,24 +39,30 @@
         <input type="search" class="pesquisar-item" placeholder="Pesquise aqui" />
       </div>
     </header>
-    
+
     <section class="login">
       <div class="login__conteudo">
         <h3 class="login-titulo">INICIAR SESSÃO</h3>
         <form class="cadastro__formulario" id="data-formulario">
           <div class="campo-texto">
             <label for="email">E-mail</label>
-            <input name="email" id="email" class="campo__escrita" type="email" required />
+            <input name="email" id="email" class="campo__escrita" type="email" />
           </div>
           <div class="campo-texto">
             <label for="senha">Senha</label>
             <input name="senha" id="senha" class="campo__escrita" type="password" />
             <br />
-            <button href="../index.html" class="recuperecao_senha" id="recuperar_senha">Esqueceu a senha?</button>
+            <button class="recuperecao_senha" id="recuperar_senha">Esqueceu a senha?</button>
           </div>
-          <button class="botao_entrar" onclick="window.location.href = '../index.html'">Entrar</button>
+          <button class="botao_entrar">Entrar</button>
           <br />
-          <button class="botao_cadastrar" onclick="window.location.href = '../pages/cadastro.html'">Cadastre-se</button>
+          <button
+            class="botao_cadastrar"
+            id="botao_cadastrar"
+            onclick="window.location.href = '../pages/cadastro.html'"
+          >
+            Cadastre-se
+          </button>
         </form>
       </div>
     </section>

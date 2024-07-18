@@ -1,4 +1,28 @@
-//import mostrarMensagem from "./js/alerts";
+function montarTitulo(tipo) {
+  switch (tipo) {
+    case "erro":
+      return "<b>Erro!</b> <br />";
+    case "sucesso":
+      return "<b>Sucesso!</b> <br />";
+    case "alerta":
+      return "<b>Alerta!</b> <br />";
+    case "info":
+      return "<b>Mensagem!</b> <br />";
+    default:
+      "";
+  }
+}
+
+function mostrarMensagem(tipo, mensagem) {
+  const elementoMensagem = document.getElementById("mensagem_conteudo");
+  elementoMensagem.classList.add("mensagem", tipo);
+  elementoMensagem.innerHTML = montarTitulo(tipo) + mensagem;
+  elementoMensagem.style.display = "block";
+
+  setTimeout(() => {
+    elementoMensagem.style.display = "none";
+  }, 4000);
+}
 
 async function carregarProdutos() {
   try {
@@ -27,7 +51,6 @@ async function carregarProdutos() {
     });
     swiper2.update();
     swiper3.update();
- 
 
     const comprarButtons = document.querySelectorAll(".botao-produtos");
     const carrinhoLista = document.getElementById("carrinho-lista");
@@ -62,14 +85,25 @@ async function carregarProdutos() {
         let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
         carrinho.push(produto);
         localStorage.setItem("carrinho", JSON.stringify(carrinho));
-        alert("Produto adicionado no carrinho!!");
+        mostrarMensagem("sucesso", "Produto adicionado no carrinho!!");
         renderCarrinho();
       });
     });
-    
   } catch (error) {
     console.error("Erro ao carregar produtos:", error);
   }
 }
+
+function usuarioLogado() {
+  let userLogado = JSON.parse(localStorage.getItem("userLogado"));
+  if (userLogado) {
+    const usuarioLogado = document.querySelector(".user_logado");
+    usuarioLogado.innerHTML = ` 
+            <label class="user_logado">Olá, ${userLogado.name}</label>        
+        `;
+  }
+}
+
+usuarioLogado();
 
 document.addEventListener("DOMContentLoaded", carregarProdutos);
