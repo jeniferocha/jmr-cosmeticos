@@ -1,4 +1,6 @@
 import mostrarMensagem from "./alerts.js";
+import { API_URL } from "./constantes.js";
+
 
 const emailLogin = document.getElementById("email");
 const senhaLogin = document.getElementById("senha");
@@ -21,7 +23,7 @@ formulario.addEventListener("submit", async (e) => {
   console.log(email, password);
 
   try {
-    const response = await fetch("http://localhost:3000/login", {
+    const response = await fetch(`${API_URL}/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

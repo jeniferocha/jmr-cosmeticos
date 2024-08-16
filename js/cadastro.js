@@ -1,4 +1,5 @@
 import mostrarMensagem from "./alerts.js";
+import { API_URL } from "./constantes.js";
 import ehUmCPF from "./valida-cpf.js";
 
 const formulario = document.getElementById("data-formulario");
@@ -27,7 +28,7 @@ formulario.addEventListener("submit", async (e) => {
 
   // localStorage.setItem("cadastros", JSON.stringify(cadastros));
   try {
-    const response = await fetch("http://localhost:3000/clientes", {
+    const response = await fetch(`${API_URL}/clientes`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

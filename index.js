@@ -1,3 +1,5 @@
+import { API_URL } from "./js/constantes";
+
 function montarTitulo(tipo) {
   switch (tipo) {
     case "erro":
@@ -26,7 +28,7 @@ function mostrarMensagem(tipo, mensagem) {
 
 async function carregarProdutos() {
   try {
-    const response = await fetch("http://localhost:3000/produtos");
+    const response = await fetch(`${API_URL}/produtos`);
     const data = await response.json();
 
     const carrosselIds = ["produtos-swiper-2", "produtos-swiper-3"];
