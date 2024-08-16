@@ -1,4 +1,4 @@
-import { API_URL } from "./js/constantes";
+import { API_URL } from "./js/constantes.js";
 
 function montarTitulo(tipo) {
   switch (tipo) {
